@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+const loadConfig = require('../utils/loadConfig')
+const parseArguments = require('../utils/parseArguments')
+const printHelp = require('../utils/printHelp')
+
+try {
+    const config = loadConfig()
+    const arguments = parseArguments()
+
+    require(`../lib/${arguments.domain}/${arguments.command}`)(config, arguments.flags)
+} catch (error) {
+    printHelp('An error occured: ', error)
+}

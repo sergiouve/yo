@@ -1,0 +1,22 @@
+{
+  "name": "yo",
+  "version": "1.0.0",
+  "description": "My little helper",
+  "main": "bin/yo",
+  "bin": {
+    "yo": "bin/yo"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiouve/yo.git"
+  },
+  "author": "Sergio Uve",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergiouve/yo/issues"
+  },
+  "homepage": "https://github.com/sergiouve/yo#readme"
+}
